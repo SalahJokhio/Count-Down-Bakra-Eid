@@ -1,0 +1,131 @@
+.main_container {
+    height: 100vh;
+    width: 100vw;
+    /* background-image: url(/assets/goat-qurban-eid-al-adha-mubarak-festival-islamic-background_773230-21390.jpg); */
+    background-size: cover; 
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#video-background {
+    position: fixed;
+    top: 65%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+  }
+  
+  .content {
+    padding: 20px;
+  }
+  
+  
+.text_heading {
+    height: 200px;
+    width: 500px;
+    color: rgb(0, 255, 170);
+    position: absolute;
+    margin-bottom: 300px;
+    margin-right: 600px;
+}
+h1 {
+    font-size: 80px;
+}
+p {
+    font-size: 30px;
+    line-height: 10px;
+    text-align: center;
+    margin-right: 150px;
+}
+
+.img {
+    position: relative;
+}
+
+.img img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;  
+}
+
+.countdown_main {
+    height: 150px;
+    width: 600px;
+    margin-top: 400px;
+    margin-right: 600px;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+}
+.countdown {
+    height: 130px;
+    width: 100px;
+    border: 1px solid white;
+    border-left: 4px solid white;
+    border-radius: 5px;
+    border-top-right-radius: 15px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 20px;
+}
+.countdown:hover {
+    border-color: rgb(0, 255, 21);
+    box-shadow: 0 0 10px rgba(0, 255, 21, 0.5);
+    transform: scale(1.1);
+}
+
+.number {
+    height: 50px;
+    border-bottom: 4px solid white;
+}
+
+.text {
+    height: 50px;
+    align-items: end;
+    margin-top: 30px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+}
+
+h3 {
+    margin-top: 650px;
+    margin-right: 1000px;
+    position: absolute;
+    color: rgb(9, 255, 0);
+}
+
+#c_seconds {
+
+}
+
+@keyframes flashBorder {
+    0%, 100% { border-color: transparent; }
+    25% { border-bottom-color: rgb(0, 255, 21); }
+    50% { border-right-color: rgb(0, 255, 21); }
+    75% { border-top-color: rgb(60, 255, 21); }
+    100% { border-left-color: rgb(0, 255, 21); }
+}
+
+.countdown.flash-effect {
+    animation: flashBorder 1s infinite;
+}
+
+@keyframes flashText {
+    0%, 100% { color: rgb(0, 255, 170); }
+    25% { color: rgb(0, 255, 170); }
+    50% { color: rgb(173, 193, 177); }
+    75% { color: rgb(0, 255, 170); }
+    100% { color: rgb(0, 255, 170); }
+}
+
+.flash-text {
+    animation: flashText 1s infinite;
+}
